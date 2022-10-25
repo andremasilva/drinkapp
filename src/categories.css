@@ -1,0 +1,15 @@
+.cat {
+    display: flex;
+    gap: 4vh;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(141, 98, 98) 0%, rgb(93, 131, 173) 100%);
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}

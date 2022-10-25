@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { Link, Route, Routes } from 'react-router-dom';
+import Categories from './Categories';
+import Drinks from './Dinks';
+import Home from './Home';
+import DrinkDetails from './DrinkDetails';
+import NoPage from './NoPage';
+import Search from './Search';
+import Searched from './Searched';
+import { GiKnifeFork } from 'react-icons/gi';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Categories />
+      <Search />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/drinks/:type" element={<Drinks />} />
+        <Route path="/details/:id" element={<DrinkDetails />} />
+        <Route path="/searched/:search" element={<Searched />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
     </div>
   );
 }

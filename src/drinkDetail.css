@@ -1,0 +1,64 @@
+.detail-container {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    max-width: 400vh;
+    justify-content: center;
+}
+
+.details-right {
+    flex: 1;
+    max-width: 55vh;
+}
+
+.details-inst {
+    min-width: 65vh;
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+
+.details-inst {
+    margin-top: 2vh;
+    min-width: 55vh;
+}
+
+.details-ing {
+    list-style: none;
+    margin-top: 2vh;
+    text-decoration: none;
+    max-width: 55vh;
+    max-height: 50vh;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+}
+
+.detail-left {
+    margin-right: 1.5rem
+}
+
+.details-desc {
+    font-size: 1rem;
+    color: rgb(102, 96, 87);
+    padding: 1vh;
+}
+
+.details-image {
+    max-width: 50vh;
+    border-radius: 10%;
+}
+
+.active {
+    background: linear-gradient(35deg, #494949, #313131);
+    color: white;
+}
+
+button {
+    padding: 1rem 2rem;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    margin-right: 2rem;
+    font-weight: 600;
+}
